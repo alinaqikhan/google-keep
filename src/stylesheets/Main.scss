@@ -1,0 +1,115 @@
+.main-container {
+  height: 100%;
+  width: 100%;
+}
+
+.add-note-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  z-index: 1000;
+
+  .add-note-box {
+    background-color: #fff;
+    border-color: #e0e0e0;
+    width: 59.8rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+      0 2px 6px 2px rgba(60, 64, 67, 0.149);
+    padding: 0.4rem 1.6rem 1rem 1.4rem;
+    border: 1px solid transparent;
+    font-weight: 400;
+    line-height: 1.2rem;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-bottom-style: solid;
+    z-index: 1000;
+  }
+
+  input {
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 0.5rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Product Sans, Roboto, Arial, sans-serif;
+    box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.1),
+      inset -1 -1px 0 rgba(0, 0, 0, 0.07);
+      z-index: 1000;
+  }
+  textarea {
+      outline: none;
+      border: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+.notes-container {
+  margin: 5rem auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.note {
+  min-height: 3rem;
+  cursor: default;
+  letter-spacing: 0.01428571em;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  padding: 0.4rem 1.6rem 1.2rem 1.6rem;
+  color: rgb(32, 33, 36);
+  max-width: 23.8rem;
+  outline-color: rgb(32, 33, 36);
+  border: 0.1rem solid rgba(32, 33, 36, 0.3);
+  border-radius: 0.8rem;
+  background-color: #e8eaed;
+  p {
+      font-size: 1.6rem;
+  }
+
+  button {
+      background-color: #fbbc04;
+      border: 0.1rem solid #fbbc04;
+      border-radius: 0.4rem;
+      box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      outline: none;
+      outline: 0;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      transform: translateY(0);
+      transition: transform 150ms, box-shadow 150ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      position: relative;
+      margin-top: 1rem;
+    
+    &:hover {
+      box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+      transform: translateY(-2px);
+    }
+    
+    @media (min-width: 768px) {
+      .button-37 {
+        padding: 10px 30px;
+      }
+    } 
+  }
+
+  &:hover {
+      background-color: #ffffff;
+  }
+
+}

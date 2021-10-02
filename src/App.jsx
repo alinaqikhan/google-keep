@@ -1,6 +1,6 @@
 import React from 'react';
 import './stylesheets/App.scss';
-import { Header } from './components';
+import { Header, Main } from './components';
 
 export const App = () => {
   return (
@@ -8,7 +8,9 @@ export const App = () => {
       <header>
         <Header />
       </header>
-      <main></main>
+      <main>
+        <Main />
+      </main>
     </>
   )
 }
