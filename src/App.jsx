@@ -3,8 +3,9 @@ import './stylesheets/App.scss';
 
 export const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <header></header>
+      <main></main>
+    </>
   )
 }

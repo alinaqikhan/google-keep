@@ -1,0 +1,15 @@
+#root {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.4rem 1fr;
+    grid-template-areas: "header" "main";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
