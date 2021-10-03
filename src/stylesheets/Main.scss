@@ -25,6 +25,7 @@
     border-bottom-color: rgba(0, 0, 0, 0);
     border-bottom-style: solid;
     z-index: 1000;
+    position: relative;
   }
 
   input {
@@ -44,6 +45,38 @@
       outline: none;
       border: none;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      position: relative;
+      width: 100%;
+      font-size: 1.6rem;
+  }
+  button {
+    background-color: #fbbc04;
+      border: 0.1rem solid #fbbc04;
+      border-radius: 0.4rem;
+      box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      outline: none;
+      outline: 0;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      transform: translateY(0);
+      transition: transform 150ms, box-shadow 150ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      position: relative;
+      margin-top: 1rem;
+      margin-left: 50rem;
+    
+    &:hover {
+      box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+      transform: translateY(-2px);
+    }
   }
 }
 
@@ -68,7 +101,19 @@
   outline-color: rgb(32, 33, 36);
   border: 0.1rem solid rgba(32, 33, 36, 0.3);
   border-radius: 0.8rem;
-  background-color: #e8eaed;
+  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.1),
+  inset -1 -1px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(0);
+      transition: transform 150ms, box-shadow 150ms;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+        transform: translateY(-0.4rem);
+      }
+
   p {
       font-size: 1.6rem;
   }

@@ -11,9 +11,15 @@ export const AddNote = () => {
             return {...prevData, title:e.target.value}
         })} value={inputText.title} placeholder="Take a note..." />
         {
-            inputText.title.length>0? (<textarea name="" onChange={(e)=>setInputText((prevData)=> {
+            inputText.title.length>0?
+             (
+             <>
+             <textarea name="" onChange={(e)=>setInputText((prevData)=> {
                 return {...prevData, body:e.target.value}
-            })} id="" cols="57" value={inputText.body} placeholder="Take a note..." rows="3"></textarea>):null
+            })} id="" cols="57" value={inputText.body} placeholder="Take a note..." rows="3"></textarea>
+            <button className="add-button">Close</button>
+            </>
+            ):null
         }
         
       </div>
