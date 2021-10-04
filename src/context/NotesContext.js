@@ -2,7 +2,7 @@
 import React, { createContext, useReducer } from "react";
 import { contextReducer } from "./contextReducer";
 
-const initialState = [];
+const initialState = JSON.parse(localStorage.getItem('notes')) || [];
 
 export const NotesDataContext = createContext(initialState);
 

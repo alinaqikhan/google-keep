@@ -91,19 +91,17 @@
 
 .note {
   min-height: 3rem;
+  margin: 1rem;
   cursor: default;
   letter-spacing: 0.01428571em;
   font-family: Roboto, Arial, sans-serif;
   font-weight: 400;
-  padding: 0.4rem 1.6rem 1.2rem 1.6rem;
+  padding: 0.6rem 1.6rem 1.4rem 1.6rem;
   color: rgb(32, 33, 36);
   max-width: 23.8rem;
   outline-color: rgb(32, 33, 36);
-  border: 0.1rem solid rgba(32, 33, 36, 0.3);
   border-radius: 0.8rem;
-  box-shadow: inset -1px -1px 0 rgba(0, 0, 0, 0.1),
-  inset -1 -1px 0 rgba(0, 0, 0, 0.07);
-  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   transform: translateY(0);
       transition: transform 150ms, box-shadow 150ms;
       user-select: none;

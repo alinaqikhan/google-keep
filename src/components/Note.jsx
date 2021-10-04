@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 
-export const Note = () => {
+export const Note = ({ title, body }) => {
+    
     return (
         <div className="note" role="textbox">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo aperiam nemo suscipit praesentium sed quibusdam culpa non aut facilis deleniti itaque eligendi repellendus nobis illum, endi consequatur, veniam cupiditate officia omnis incidunt quas veritatis dolores molestiae possimus dignissimos.</p>
+            <h1>{title}</h1>
+            <p>{body}</p>
             <button>Delete</button>
         </div>
     )
