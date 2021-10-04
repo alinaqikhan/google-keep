@@ -1,13 +1,16 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useContext } from 'react';
+import { NotesDataContext } from '../context/NotesContext';
 
-export const Note = ({ title, body }) => {
+export const Note = ({ id, title, body }) => {
+
+    const { removeFromNotes } = useContext(NotesDataContext);
     
     return (
         <div className="note" role="textbox">
             <h1>{title}</h1>
             <p>{body}</p>
-            <button>Delete</button>
+            <button onClick={()=>removeFromNotes(id)}>Delete</button>
         </div>
     )
 }

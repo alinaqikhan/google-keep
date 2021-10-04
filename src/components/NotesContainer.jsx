@@ -12,7 +12,7 @@ export const NotesContainer = () => {
         notes? (
         <div className="notes-container">
             {
-                notes.map((note)=>(<Note key={note.id} title={note.title} body={note.body} />))
+                notes.map((note)=>(<Note id={note.id} key={note.id} title={note.title} body={note.body} />))
             }
         </div>):null
     )
